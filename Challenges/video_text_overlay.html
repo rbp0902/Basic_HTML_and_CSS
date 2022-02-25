@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+
+    position: relative;
+    top: 50%;
+    left: 40%;
+
+}
+</style>
+</head>
+<body>
+
+<div class="text">
+
+    <h2>Video Text</h2>
+    <p>How to place text over a video:</p>
+
+</div>
+
+
+
+<div class="container">
+
+    <video width="320" height="240" controls muted autoplay loop>
+        <source src="fishing.mp4" type="video/mp4"> 
+        Your browser does not support the video tag.
+      </video>
+  
+    
+
+  <div class="centered">My favorite pastime</div>
+</div>
+
+</body>
+</html> 
