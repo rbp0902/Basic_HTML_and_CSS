@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<title>Holiday Destinations 2022</title>
 		<link rel="stylesheet" type="text/css" href="Basic_CSS_2.css">
-		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
+		<link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">		
+		<script src="./JS/one_page_website.js" defer></script>
 
 	</head>
 	
@@ -27,8 +28,96 @@
 		</div>
 		
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/n7Qb5pBdn8E" title="YouTube video player" 
-		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+		frameborder="0" allow="accelerometer; autoplay; clipboard-write; emagesncrypted-media; gyroscope; picture-in-picture" 
 		allowfullscreen></iframe>
+
+
+		<!--Creating a Lightbox here -->
+		<!--Images used to open the lightbox-->
+		<div class="row">
+			<div class="column">
+				<img src="./images/thumb/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/thumb/thumbnail_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/thumb/thumbnail_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/thumb/thumbnail_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/thumb/thumbnail_5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+			</div>
+		</div>
+
+		<!--The Modal/Lightbox-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1 / 5</div>
+					<img src="./images/thumb/thumbnail_1_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 5</div>
+					<img src="./images/thumb/thumbnail_2_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 5</div>
+					<img src="./images/thumb/thumbnail_3_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 5</div>
+					<img src="./images/thumb/thumbnail_4_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 5</div>
+					<img src="./images/thumb/thumbnail_5_wide.jpg" style="width:100%">
+				</div>
+
+				<!--Next/previous controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+				<a class="next" onclick="plusSlides(1)">&#10095</a>
+
+				<!--Caption text-->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!--Thumbnail image controls-->
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumbnail_1.jpg" onclick="currentSlide(1)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumbnail_2.jpg" onclick="currentSlide(1)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumbnail_3.jpg" onclick="currentSlide(1)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumbnail_4.jpg" onclick="currentSlide(1)" alt="">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumbnail_5.jpg" onclick="currentSlide(1)" alt="">
+				</div>
+			</div>
+		</div>
+
+		<!--End of Modal/Lightbox-->
+
+
+
+
 		
 		<!-- HOME -->
 		<div id="home">
